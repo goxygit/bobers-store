@@ -1,0 +1,70 @@
+.backgroundHeader{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    height: 64px;
+    padding: 8px 16px;
+    margin-bottom: 24px;
+}
+.boberImg{
+    width: 32px;
+    height: 32px;
+}
+.logoEl{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    cursor: pointer;
+}
+.textLogoEl{
+    padding-left: 16px;
+}
+.headerLogoText{
+    font-size: 24px;
+    font-weight: 800;
+}
+.downHederTextEl{
+    color: #b4b4b4;
+    font-size: 15px;
+}
+.basketButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #df741c;
+    border-radius: 22px;
+    padding: 14px;
+    cursor: pointer;
+    user-select: none;
+}
+.smallBasket{
+}
+.basketImg{
+    height: 20px;
+    width: 20px;
+}
+.priceSpan{
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 12px;
+    padding-left: 4px;
+    box-sizing: border-box;
+    border-right: 0.5px solid #cfcfcf;
+    color: white;
+}
+.basketSpan{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding-right: 4px;
+    padding-left: 12px;
+}
+.number{
+    padding-left: 8px;
+    color: white;
+}

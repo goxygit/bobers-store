@@ -1,0 +1,86 @@
+.backgroundCategory{
+    display: flex;
+    align-items: center;
+    margin-top: 12px;
+    padding: 8px 16px;
+    box-sizing: border-box;
+}
+.categoryAndFilter{
+    margin-top: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+    @media (max-width: 1060px) {
+        flex-direction: column-reverse;
+    }
+}
+.category{
+    display: flex;
+    flex-wrap: wrap;
+    @media (max-width: 1060px) {
+        justify-content: center;
+    }
+}
+.sortParams{
+    display: flex;
+    width: 100%;
+    padding: 8px 4px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.sortParams:hover{
+    background-color: #d6d6d6;
+    transition: 0.2s;
+}
+.filterButton{
+    background-color: #dddddd;
+    transition: 0.3s;
+    padding: 10px 22px;
+    height: 24px;
+    border-radius: 24px;
+    user-select: none;
+    cursor: pointer;
+    margin: 0 12px;
+    z-index: 333;
+    @media (max-width: 1060px) {
+        margin: 12px 12px 0;
+    }
+}
+.filter{
+    text-align: right;
+    user-select: none;
+    margin-right: 32px;
+    padding: 10px;
+    height: 24px;
+    width: 240px;
+    z-index: 333;
+    padding-bottom: 12px;
+    @media (max-width: 1060px) {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+}
+.dropDownListLink{
+    color: aqua;
+    cursor: pointer;
+    padding-left: 12px;
+}
+.dropDownListBackground{
+    background-color: #f4f4f9;
+    display: inline-block;
+    text-align: start;
+    z-index: 5000;
+    top: 12px;
+    padding: 16px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+}
+.active{
+    background-color: #1b1b1b;
+    color: white;
+    transition: 0.3s;
+}

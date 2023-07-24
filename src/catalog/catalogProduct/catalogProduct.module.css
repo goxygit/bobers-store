@@ -1,0 +1,126 @@
+.catalogProduct{
+    padding-top: 24px;
+    user-select: none;
+}
+.boberImg{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 220px;
+}
+.boberEl{
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    width: 200px;
+    padding: 12px;
+    height: 420px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    background-color: #fff;
+    transition: 0.1s;
+}
+.boberEl:hover{
+    transform: translateY(-5px);
+    box-shadow: 0px 14px 30px rgba(0, 0,0,0.05);
+    transition: 0.1s;
+}
+.boberName{
+    padding-top: 12px;
+    font-size: 17px;
+    height: 48px;
+    max-height: 64px;
+}
+.imgEl{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.inStock{
+    height: 24px;
+    padding: 16px 0;
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 12px;
+}
+.buyPanel{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 12px;
+    height: 64px;
+}
+.filter{
+    font-size: 28px;
+    font-weight: 800;
+    margin-top: 44px;
+}
+.catalog{
+    padding-top:24px; 
+    display: grid;
+    grid-template-columns: repeat(14, 240px);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 5px;
+    grid-row-gap: 14px;
+    @media (max-width: 3701px) {
+        grid-template-columns: repeat(13, 240px);
+    }
+    @media (max-width: 3459px) {
+        grid-template-columns: repeat(12, 240px);
+    }
+    @media (max-width: 3181px) {
+        grid-template-columns: repeat(11, 240px);
+    }
+    @media (max-width: 2916px) {
+        grid-template-columns: repeat(10, 240px);
+    }
+    @media (max-width: 2656px) {
+        grid-template-columns: repeat(9, 240px);
+    }
+    @media (max-width: 2380px) {
+        grid-template-columns: repeat(8, 240px);
+    }
+    @media (max-width: 2003px) {
+        grid-template-columns: repeat(7, 240px);
+    }
+    @media (max-width: 1773px) {
+        grid-template-columns: repeat(6, 240px);
+    }
+    @media (max-width: 1523px) {
+        grid-template-columns: repeat(5, 240px);
+    }
+    @media (max-width: 1258px) {
+        grid-template-columns: repeat(4, 240px);
+    }
+    @media (max-width: 1000px) {
+        grid-template-columns: repeat(3, 240px);
+    }
+    @media (max-width: 748px) {
+        grid-template-columns: repeat(2, 270px);
+    }
+    @media (max-width: 547px) {
+        grid-template-columns: repeat(1, 280px);
+        justify-content: center;
+    }
+}
+.addInbasket{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #7b04df;
+    color: white;
+    outline: none;
+    font-size: 16px;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 12px;
+    width: 100px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.addInbasket[disabled]{
+    background-color: #cccccc;
+    color: #666666;
+
+}

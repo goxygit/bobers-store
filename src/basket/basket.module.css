@@ -1,0 +1,183 @@
+.none{
+  opacity: 0;
+}
+.backgroundBasket{
+  position: fixed;
+  top: 0;
+  z-index: 9999; /* Встановлює високий індекс шару, щоб блок був поверх інших елементів */
+  right: 0;
+  background-color: #fff;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  padding: 0;
+  height:100vh ;
+  width: 0;
+  box-sizing: border-box;
+  transition: 0.2s;
+  @media (max-width: 768px) {
+    width: 100%;
+    height: 0;
+    right: auto;
+    top: auto;
+    bottom: 0;
+}
+}
+.openBasket{
+    animation-duration: 0.2s;
+    animation-name: slidein;
+    width: 400px;
+    overflow-y: scroll;
+    @media (max-width: 768px) {
+      width: 100%;
+      height: 70vh;
+  }
+}
+.headerBasketElement{
+  display: flex;
+  padding: 12px;
+  width: 100%;
+  height: calc(32px + 12px*2) ;
+  justify-content: flex-end;
+  align-items: center;
+  box-sizing: border-box;
+}
+.basketText{
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 20px;
+  font-weight: 700;
+  user-select: none;
+}
+.closeImg{
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  user-select: none;
+}
+.basketContent{
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+.productBlock{
+  display: flex;
+  padding: 20px 12px;
+  border-top: 0.5px solid rgb(204, 204, 204) ;
+  border-bottom: 0.5px solid rgb(204, 204, 204);
+}
+
+.productImg{
+  width: 60px;
+  height: 60px;
+}
+.productImgBlock{
+  padding: 8px;
+}
+.productInfoBlock{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.productName{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+  box-sizing: border-box;
+  font-size: 16px;
+  user-select: none;
+
+}
+.inStock{
+  padding: 4px 0;
+  font-size: 14px;
+}
+.priceBlock{
+  padding: 8px 0 0 0;
+}
+.price{
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+.quantityProduct{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  user-select: none;
+  height: 40px;
+  padding: 4px 0;
+}
+.addProduct{
+  display: flex;
+  font-size: 18px;
+  align-items: center;
+}
+.quantityChange{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  height: 32px;
+  width: 32px;
+  border-radius: 6px;
+  border: 1px solid #7b04df;
+}
+.quantity{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+}
+.final{
+  padding: 12px;
+}
+.totalPrice{
+  display: flex;
+  justify-content: space-between;
+}
+.transactionButton{
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  padding: 8px 16px;
+  margin-top: 24px;
+  width: 100%;
+  border-radius: 8px;
+  background-color: #7b04df;
+  cursor: pointer;
+  user-select: none;
+}
+.deleteImg{
+  cursor: pointer;
+  user-select: none;
+}
+.spanInButton{
+  color: white;
+}
+@keyframes slidein {
+    from {
+      width: 0;
+    }
+  
+    to {
+      
+      width: 400px;
+    }
+    
+}
+@media (max-width: 768px) {
+  @keyframes slidein {
+    from {
+      height:0 ;
+    }
+  
+    to {
+      height: 70vh;
+    }
+    
+}
+}

@@ -1,0 +1,17 @@
+.backgroundBlock{
+    background-color: #F0F2F5;
+    border-radius: 12px;
+    min-height:100vh  ;
+    box-sizing: border-box;
+}
+.catalog{  
+    padding: 10px 12px;
+}
+.dark{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 500;
+    opacity: 0.2;
+    background-color: #000000;
+}
