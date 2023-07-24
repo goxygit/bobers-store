@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/bobers-store/static/css/main.2cbee171.css",
+    "main.js": "/bobers-store/static/js/main.87ce7a66.js",
+    "static/js/787.d149bf21.chunk.js": "/bobers-store/static/js/787.d149bf21.chunk.js",
+    "static/media/bober.png": "/bobers-store/static/media/bober.8a72996d30ebdd4721e4.png",
+    "index.html": "/bobers-store/index.html",
+    "main.2cbee171.css.map": "/bobers-store/static/css/main.2cbee171.css.map",
+    "main.87ce7a66.js.map": "/bobers-store/static/js/main.87ce7a66.js.map",
+    "787.d149bf21.chunk.js.map": "/bobers-store/static/js/787.d149bf21.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2cbee171.css",
+    "static/js/main.87ce7a66.js"
+  ]
+}
